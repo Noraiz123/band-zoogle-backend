@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 
 // Define more routes as needed
 app.get('/api/data', async (req, res) => {
-  const data = await Board.find().limit(10);
+  const data = await Board.find();
   res.json(data);
 });
 
